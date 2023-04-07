@@ -413,6 +413,7 @@ color: var(--color-slate);
 
 .filter-btn:focus,
 .filter-btn:hover {
+   border: 1px solid transparent;
 
   background-color: var(--color-ocean);
   color: var(--color-white);
@@ -422,6 +423,7 @@ color: var(--color-slate);
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  row-gap: 48px;
   flex-basis: calc((100%-48px)/3);
    
 }
@@ -442,9 +444,7 @@ color: var(--color-slate);
 
 .card-set {
   
-  padding-top: 32px;
-  padding-bottom: 32px;
-  padding-left:16px;
+  padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
   border-top: none;
 }

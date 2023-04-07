@@ -85,12 +85,10 @@ button {
 }
 
 .container {
-
   width: 1158px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-
 }
 
 /**
@@ -111,18 +109,10 @@ button {
 }
 
 .header-container {
-
   display: flex;
-  align-items: center;
-  
-  
+  align-items: center; 
 }
 
-/**
-  |============================
-  | HEADER
-  |============================
-*/
 
 /* logo */
 .logo {
@@ -135,22 +125,18 @@ button {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
 }
 
 .header .logo {
-
   margin-right:76px;
 }
 
 .header-container {
-
   display: flex;
   align-items: center;
 }
 
 .header-nav {
-
   display:flex;
   align-items: center;
 }
@@ -158,8 +144,6 @@ button {
 display: block;
  padding-top: 25.5px;
  padding-bottom: 25.5px;
-
-
 }
 
 .header-logo {
@@ -167,11 +151,9 @@ display: block;
 }
 
 .header-link {
-
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-
 }
 
 .header-link:hover,
@@ -186,8 +168,6 @@ display: block;
   gap: 40px;
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right:332px;
-
 
   color: var(--color-navy-blue);
   font-weight: 500;
@@ -198,30 +178,22 @@ display: block;
 
 /* contacts */
 .contacts {
+  margin-left:auto;
 color: var(--color-slate);
   font-style: normal;
   line-height: 1.5;
 }
 .contacts-list {
-  
   display: flex;
   gap: 40px;
-  
 }
 
-
-.contact-item {
-}
-.contact-mail {
-}
 
 .contact-link:hover,
 .contact-link:focus {
   color: var(--color-ocean);
 }
 
-.contact-tel {
-}
 /**
     |============================
     | Hero
@@ -230,19 +202,16 @@ color: var(--color-slate);
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
+
   text-align: center;
   background-color: var(--color-navy-blue-modal);
-
 }
 .hero-title {
    max-width: 496px;
    margin-bottom: 48px;
    margin-left: auto;
    margin-right: auto;
-
-   
-    
-
+ 
   color: var(--color-white);
   font-size: 56px;
   line-height: 1.07;
@@ -258,7 +227,6 @@ color: var(--color-slate);
   background-color: var(--color-iris);
   color: var(--color-white);
   border: none;
-
 }
 
 .hero-btn:hover,
@@ -272,40 +240,29 @@ color: var(--color-slate);
   |============================
 */
 .feautures {
- 
-  text-align: left;
   padding-top: 120px;
   padding-bottom: 120px;
 
+  text-align: left;
 }
 
 
 
 .features-list {
-  
   display: flex;
-  gap: 24px;
-  
-     
-    
+  gap: 24px;  
 }
 
 .feautures-title {
-  
-  width: 264px;
   margin-bottom: 8px;
-
-
+  width: 264px;
 }
 
 .feautures-item {
-
   flex-basis: calc((100%-24px)/3);
-  
 }
 
 .features-text {
-
   width: 264px;
 }
 /**
@@ -314,13 +271,12 @@ color: var(--color-slate);
   |============================
 */
 .work {
-
   padding-bottom: 120px;
 }
 
 .work-title {
-  
   margin-bottom: 72px;
+
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -329,7 +285,6 @@ color: var(--color-slate);
 }
 
 .work-list {
-
   display: flex;
   gap: 24px;
 }
@@ -341,11 +296,13 @@ color: var(--color-slate);
 */
 .team {
   padding: 120px 0;
+
   background-color: var(--color-cloud);
 }
 
 .team-title {
   margin-bottom:72px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -353,25 +310,19 @@ color: var(--color-slate);
 }
 
 .team-list {
-
   display: flex;
-  gap: 24px;
- 
- 
-  
+  gap: 24px; 
 }
 
 .team-description {
-
   padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
+
   background-color: var(--color-white);
   }
 
 .team-item {
-
-  flex-basis: calc((100%-24px)/3);
-  
+  flex-basis: calc((100%-24px)/3); 
 }
 
 .team-subtitle {
@@ -389,15 +340,14 @@ color: var(--color-slate);
 */
 
 .filter {
-  
   padding: 96px 120px;
 }
+
 .filter-list {
   display: flex;
-  gap: 24px;
   justify-content: center;
+  gap: 24px;
   margin-bottom: 72px;
-  
 }
 
 .filter-btn {
@@ -424,26 +374,20 @@ color: var(--color-slate);
   flex-wrap: wrap;
   gap: 24px;
   row-gap: 48px;
-  flex-basis: calc((100%-48px)/3);
-   
+  flex-basis: calc((100%-48px)/3);  
 }
+
 .portfolio-item {
     background-color: var(--color-white);
- 
 }
-.portfolio-link {
-}
+
 .portfolio-title {
   margin-bottom: 8px;
+
   text-align: inherit;
-}
-.portfolio-text {
-}
-.text {
 }
 
 .card-set {
-  
   padding: 32px 16px;
   border: 1px solid var(--color-cornflower);
   border-top: none;
@@ -460,24 +404,24 @@ color: var(--color-slate);
   background-color: var(--color-navy-blue-modal);
 }
 .container-footer {
-  margin-left: 156px;
   width: 264px;
+  margin-left: 156px;
   padding: 0;
 }
 
 .footer .logo {
-
   display: inline-block;
   margin-bottom:16px;
-
 }
-.footer-logo {
 
+.footer-logo {
   color: var(--color-cloud);
 }
+
 .footer-text {
   color: var(--color-cloud);
 }
+
  /**
    |============================
    | Hiiden titles

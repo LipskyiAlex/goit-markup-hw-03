@@ -21,7 +21,34 @@
   |============================
 */
 
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-white);
+  color:var(--color-slate);
+  letter-spacing: 0.02em;
+}
+
+ul {
+
+  margin: 0;
+  padding:0;
+}
+h1,h2,h3,h4,h5,h6,p {
+
+  margin: 0;
+}
+img {
+
+  display: block;
+}
+
+button {
+
+  cursor: pointer;
+}
+
 .list {
+
   list-style: none;
 }
 
@@ -30,12 +57,6 @@
   color: currentColor;
 }
 
-body {
-  font-family: var(--font-main);
-  background-color: var(--color-white);
-  color:var(--color-slate);
-  letter-spacing: 0.02em;
-}
 
 .title {
   color: var(--color-grey);
@@ -52,13 +73,30 @@ body {
 }
 
 .btn {
+  border-radius: 4%;
+
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  cursor: pointer;
+
 }
+
+.container {
+
+  width: 1158px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+/**
+  |============================
+  | END Common Settings
+  |============================
+*/
 
 /**
   |============================
@@ -70,25 +108,68 @@ body {
   background-color: var(--color-white);
 }
 
+.header-container {
+
+  display: flex;
+  align-items: center;
+  
+  
+}
+
+/**
+  |============================
+  | HEADER
+  |============================
+*/
+
 /* logo */
 .logo {
+  display: block;
+
   color: var(--color-iris);
   font-family: var(--font-logo);
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  vertical-align: middle;
   text-transform: uppercase;
+
+}
+
+.header .logo {
+
+  margin-right:76px;
+}
+
+.header-container {
+
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+
+  display:flex;
+  align-items: center;
+}
+.header .logo {
+display: block;
+ padding-top: 25.5px;
+ padding-bottom: 25.5px;
+
+
 }
 
 .header-logo {
   color: var(--color-grey);
 }
-.nav-list {
-  color: var(--color-navy-blue);
-  font-weight: 500;
-  line-height: 1.5;
+
+.header-link {
+
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
 }
 
 .header-link:hover,
@@ -96,10 +177,22 @@ body {
   color: var(--color-ocean);
   text-decoration: underline;
 }
-.list {
+
+ /* Navigation */
+.nav-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right:332px;
+
+
+  color: var(--color-navy-blue);
+  font-weight: 500;
+  line-height: 1.5;
 }
-.nav-item {
-}
+
+
 
 /* contacts */
 .contacts {
@@ -108,7 +201,13 @@ color: var(--color-slate);
   line-height: 1.5;
 }
 .contacts-list {
+  
+  display: flex;
+  gap: 40px;
+  
 }
+
+
 .contact-item {
 }
 .contact-mail {
@@ -127,19 +226,34 @@ color: var(--color-slate);
     |============================
   */
 .hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  text-align: center;
   background-color: var(--color-navy-blue-modal);
+
 }
 .hero-title {
+   width: 496px;
+   margin-bottom: 48px;
+   margin-left: auto;
+   margin-right: auto;
+
+   
+    
+
   color: var(--color-white);
   font-size: 56px;
   line-height: 1.07;
-  text-align: center;
   letter-spacing: 0.02em;
 }
 
 .hero-btn {
+  min-width: 169px;
+  min-height: 56px;
+  padding: 16px 32px;
   background-color: var(--color-iris);
   color: var(--color-white);
+
 }
 
 .hero-btn:hover,
@@ -147,21 +261,61 @@ color: var(--color-slate);
   background-color: var(--color-ocean);
 }
 
-/* features  */
-.features {
+/**
+  |============================
+  | FEATURUES
+  |============================
+*/
+.feautures {
+ 
   text-align: left;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
 }
 
+
+
 .features-list {
+  
+  display: flex;
+  gap: 24px;
+  
+     
+    
+}
+
+.feautures-title {
+  
+  width: 264px;
+  margin-bottom: 8px;
+
+
+}
+
+.feautures-item {
+
+  flex-basis: calc((100%-24px)/3);
+  
 }
 
 .features-text {
+
+  width: 264px;
 }
-/* work */
+/**
+  |============================
+  | Work
+  |============================
+*/
 .work {
+
+  padding-bottom: 120px;
 }
 
 .work-title {
+  
+  margin-bottom: 72px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -169,23 +323,51 @@ color: var(--color-slate);
   text-transform: capitalize;
 }
 
-/* team */
+.work-list {
+
+  display: flex;
+  gap: 24px;
+}
+
+/**
+  |============================
+  | Our Team
+  |============================
+*/
 .team {
+  padding: 120px 156px;
   background-color: var(--color-cloud);
 }
 
 .team-title {
-    font-weight: 700;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
   text-transform: capitalize;
 }
 
+.team-list {
+
+  display: flex;
+  gap: 24px;
+ 
+ 
+  
+}
+
+.team-description {
+
+  padding: 32px 16px;
+}
+
 .team-item {
+
+  flex-basis: calc((100%-24px)/3);
   background-color: var(--color-white);
 }
 
 .team-subtitle {
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -199,36 +381,64 @@ color: var(--color-slate);
 */
 
 .filter {
+  padding-top: 168px;
+  padding-bottom: 120px;
 }
 .filter-list {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
   
 }
 
 .filter-btn {
+  min-width: 101px;
+  min-height: 48px;
+  padding: 12px 24px;
+  border: 1px solid var(--color-cornflower);
+  
+
   color: var(--color-iris);
   background-color: var(--color-cloud);
 }
 
 .filter-btn:focus,
 .filter-btn:hover {
+
   background-color: var(--color-ocean);
   color: var(--color-white);
 }
 
 .portfolio-list {
-
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  flex-basis: calc((100%-48px)/3);
    
 }
 .portfolio-item {
     background-color: var(--color-white);
+ 
 }
 .portfolio-link {
 }
 .portfolio-title {
+  margin-bottom: 8px;
+  text-align: inherit;
 }
 .portfolio-text {
 }
 .text {
+}
+
+.card-set {
+  
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left:16px;
+  border: 1px solid var(--color-cornflower);
+  border-top: none;
 }
 
 /**
@@ -237,11 +447,44 @@ color: var(--color-slate);
   |============================
 */
 .footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 156px;
+
   background-color: var(--color-navy-blue-modal);
 }
+.container-footer {
+  margin-left: 0;
+  width: 264px;
+  padding: 0;
+}
+
+.footer .logo {
+
+  margin-bottom:16px;
+}
 .footer-logo {
+
   color: var(--color-cloud);
 }
 .footer-text {
   color: var(--color-cloud);
+}
+ /**
+   |============================
+   | Hiiden titles
+   |============================
+ */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

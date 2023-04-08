@@ -337,8 +337,7 @@ color: var(--color-slate);
 */
 
 .filter {
-  padding-top: 96px;
-  padding-bottom:120px;
+  padding:96px 120px;
 }
 
 .filter-list {

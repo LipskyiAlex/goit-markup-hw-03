@@ -159,16 +159,13 @@ display: block;
 .header-link:hover,
 .header-link:focus {
   color: var(--color-ocean);
-  text-decoration: underline;
 }
 
  /* Navigation */
 .nav-list {
   display: flex;
   gap: 40px;
-  padding-top: 24px;
-  padding-bottom: 24px;
-
+ 
   color: var(--color-navy-blue);
   font-weight: 500;
   line-height: 1.5;
@@ -256,15 +253,15 @@ color: var(--color-slate);
 .feautures-title {
   margin-bottom: 8px;
   width: 264px;
+
+  text-align: inherit;
 }
 
 .feautures-item {
   flex-basis: calc((100%-24px)/3);
 }
 
-.features-text {
-  width: 264px;
-}
+
 /**
   |============================
   | Work
@@ -340,7 +337,8 @@ color: var(--color-slate);
 */
 
 .filter {
-  padding: 96px 120px;
+  padding-top: 96px;
+  padding-bottom:120px;
 }
 
 .filter-list {
